@@ -58,11 +58,6 @@ def get_face(img, nets, is_crop=False):
 start = time.time()
 nets = load_model()
 img = cv2.resize(cv2.imread('nt.jpg'), (224,224))
-print(img.shape)
-for i in range(10000):
-    img_ = get_face(img, nets, is_crop = True)
-    print(img_.shape)
-print(time.time()-start)
 
 
 
